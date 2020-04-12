@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos Tags Básicas</title>
+    <style>
+    ul, ol{background-color:#D3DCFF;} /* Muda a cor de fundo das tags designadas */
+    body{color: steelblue;} /* Muda a cor das palavras */
+    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Linka o css ao html -->
+    <script src="script.js"></script> <!-- Linka o js ao html -->
+</head>
+<body>
+  
+    <form action="processa.php" method="post"> <!--(onde vai ser processado o formulário)-->
+        <input type="text" name="Login" placeholder="E-mail"> <!-- Cria uma caixa para inserir um texto -->
+        <input type="password" name="Senha" placeholder="Senha"><!--Cria uma caixa que não mostra o que for digitado-->
+        <p> <!-- Parágrafo -->
+        <label>Select</label> <!-- Nome -->
+        <select name="Cidade"> <!-- Cria uma caixa de seleção -->
+            <option value="1">São Paulo</option>
+            <option value="2">Rio de Janeiro</option>
+        </select>
+        </p>
+        <input type="radio" name="radio1" value="1">Sim <!-- Permite selecionar apenas uma das opções -->
+        <input type="radio" name="radio1" value="2">Não
+        <p>
+        <input type="checkbox" name="ck1" value="1">Aceita os termos<br><!--Checked força a página a iniciar com essa opção marcada -->
+        <input type="checkbox" name="ck1" value="2"checked>Criar Atalho na Área de Trabalho<br>
+        <input type="checkbox" name="ck1" value="3">Receber novidades no seu E-mail<!--Checkbox permite selecionar todas as opções-->
+        </p>
+        <input type="submit" value="Enviar" name="Submit"> <!-- Envia o formulário para a página designada -->
+    </form>
+    <p>
+    <img src="Teste-1278x744.jpg" height="200px" alt="Teste"> <!-- img src (Insere uma imagem) -->
+    <br> <!-- Quebra a linha -->
+    <a href="https://www.youtube.com/">Youtube</a> <!-- Add um link -->
+    </p>
+    <h1 class="titulo">Título</h1> <!-- class="teste" (cria uma classe para ser utilizada no css) -->
+    <h2>Título</h2> <h3>Título</h3> <h4>Título</h4> <h5>Título</h5> <h6>Título</h6>
+    <p>
+    <hr> <!-- Faz um traço Horizontal  -->
+    </p>
+    <b>Negrito</b> <i> Itálico</i> <u>Sublinhado</u> <sub>Texto Subescrito</sub> <sup>Texto Sobrescrito</sup> 
+    <br> <big>Maior que o normal</big> <small>Menor que o normal</small>
+    <p>
+    <table> <!-- Cria tabela -->
+        <caption>Tabela Teste</caption> <!-- Da um título para a tabela -->
+        <tr> <th>&nbsp;</th> <th colspan="2">Conteudos</tr> <!--&nbsp=célula vazia\\colspan="x" mescla lihas-->
+        <tr> <th rowspan="2">AAAAAA</th> <td>Conteudo</td> </tr> <!-- rowspam="x" mescla colunas -->
+        <tr> <td>Conteudo</td> </tr> <!-- tr = linha da tabela -->
+        <tr> <th>BBBBBB</th> <td>Conteudo</td> </tr> <!-- th=célula destacada da tabela\\td=célula da tabela -->
+    </table>
+    </p>
+    <ol> <!-- Faz uma lista ordenada  -->
+        <li>Primeiro Elemento</li> <!-- Insere o elemento na lista -->
+        <li>Segundo Elemento</li>
+        <li>Terceiro Elemento</li>
+    </ol>
+
+    <ul> <!-- Faz uma lista desordenada  -->
+        <li>Primeiro Elemento</li>
+        <li>Segundo Elemento</li>
+        <li>Terceiro Elemento</li>
+    </ul>
+
+</body>
+</html>
