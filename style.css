@@ -1,3 +1,92 @@
-.titulo {
-    color: blueviolet;
+/* "." é utilizado antes de uma classe; "#" antes de uma id */
+
+*{              /* '*' aplica a página inteira */
+    margin: 0; /* zera margin */
+    padding: 0; /* zera padding */
+}
+
+p{                             
+    color: white; /* Aplicará a cor em todas as palavras das tags p */
+    background-color: black; /* Aplicará a cor de fundo em todas as tags p */
+    font-size: 20px; /* Mudará o tamanho da fonte de todas as tags p */
+    font-family: Helvetica, 'Times New Roman'; /* Modifica a fonte. Tentará carregar a primeira fonte, se não der, carregará a segunda*/
+}
+
+body{
+    background-color: blanchedalmond; /* Aplicará a cor de fundo em todo o body */
+}
+
+header{
+    background-color: rgb(6, 131, 131); /* Aplicará a cor de fundo no header */
+    height: 100px; /* Ajuste da altura */
+    width: auto;
+    padding: 20px 0px 0px 0px;
+}
+
+.container{
+    width: 900px;
+    margin: auto;
+}
+
+.menu{ /* Modifica todo o menu */
+    list-style:none; /* Retira a formatação da lista */ 
+    border:1px solid #000000; /* Cira uma borda para o menu */
+    float:right;
+}
+
+.menu li{ /* Modifica todas as linhas */
+    position:relative; 
+    float: right; 
+    border-right:1px solid #000000; /* Cria uma borda/linha à direita para separar os itens*/
+}
+
+.menu li a{ /* Modifica toods os links */
+    color:rgb(0, 0, 0);
+    text-decoration:none;
+    padding:5px 10px; 
+    display:block;
+}
+
+.menu li a:hover{ /* :hover - função para quando o mouse passar  por cima, modificar o conteúdo */
+background:#333;
+color:#fff;
+text-shadow:0px 0px 5px #fff; 
+}
+
+.menu li ol{ /* Modifica apenas o <ol> que está dentro do <li> (pai) */
+    position:absolute; /* o elemento é posicionado absolutamente em seu primeiro pai posicionado */ 
+    background-color:#fff; 
+    display:none;
+}
+
+.menu li:hover ol{
+    display:block; /* Ao passar o mouse por cima do <li>Produtos, aparecerão as opções A e B */
+}
+
+.menu ol li{ /* Estiliza o menu das opções A e B */
+    border:1px solid #c0c0c0; 
+    display:block; 
+    width:100px;
+}
+
+#dive{
+    background-color: rgb(184, 175, 192); /* Aplicará a cor de fundo na ID indicada (#dive) */
+    min-height: 500px; /*Começa com 500px, mas a medida que vai aumentando o texto, a div aumenta tbm*/
+    width: 60%; /* Ajuste da largura */
+    float: left; /*força a ficar a esquerda*/
+}
+
+#divd{
+    background-color: rgb(121, 118, 119); /* Aplicará a cor de fundo na ID indicada (#divd) */
+    min-height: 500px;
+    width: 40%;
+    float: right; /*força a ficar a direita*/
+}
+
+footer{
+    clear: both; /* Se faz necessário por conta do float na div anterior */
+    background-color: rgb(6, 131, 131); /* Aplicará a cor de fundo no footer */
+    height: 30px;
+    text-align: center; /* Centraliza o texto */
+    padding: 10px 0px 0px 0px;
 }
